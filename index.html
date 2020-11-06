@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet"> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<style type="text/css">
+		@font-face {
+    font-family: 'EA Font v1.5 by Ghettoshark';
+    src: url('EASPORTS.woff2') format('woff2'),
+        url('EASPORTS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+		html,body{
+			background-color: #55b9f3;
+			font-family: 'Lalezar', cursive;
+		}
+		@font-face { 
+			font-family: "din";
+			src: url("https://cdn.futbin.com/design/css/fonts/DINPro/DINPro-CondMedium.woff") format("woff"); 
+			font-style: normal; 
+			font-weight: normal;
+			font-display: auto; 
+		}
+		.oa{
+			font-family: "din";	
+			font-size: 3vw;
+			z-index: 10;
+			position: absolute; top:26%; left:5%;
+		}
+		.name{
+			font-family: "din";	
+			font-size: 1.7vw;
+			z-index: 10;
+			position: absolute; top:49%; width:100%;
+		}
+		.prop{
+			font-family: "din";	
+			font-size: 1vw;
+			z-index: 10;
+		}
+		.pac{
+			position: absolute; top:62%; left:20%;
+		}
+		.sho{
+			position: absolute; top:70%; left:20%;
+		}
+		.pas{
+			position: absolute; top:78%; left:20%;
+		}
+		.dri{
+			position: absolute; top:62%; right:20%;
+		}
+		.def{
+			position: absolute; top:70%; right:20%;
+		}
+		.phy{
+			position: absolute; top:78%; right:20%;
+		}
+		.player{
+			z-index:10; position: absolute; right:2%; top:0px; width:84%;
+		}
+		.card{
+			position: relative; width:100%;
+			background-color: transparent;
+		}
+		.bg{
+			border-radius: 50px;
+background: #55b9f3;
+box-shadow:  20px 20px 60px #489dcf, 
+             -20px -20px 60px #62d5ff;
+		}
+		.title{
+			width:50%;
+			border-radius: 50px;
+background: linear-gradient(145deg, #c3f0ff, #a4cae1);
+box-shadow:  33px 33px 66px #9bbed5, 
+             -33px -33px 66px #d1ffff;
+		}
+
+		@media only screen and (min-width: 1600px) {
+		  .oa{
+		  	font-size:40px;
+		  }
+		  .name{
+			font-size:30px;
+		  }
+		  .prop{
+			font-size:15px;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="m-0" style="font-family: 'EA Font v1.5 by Ghettoshark'; background-color: #f3f4f5;"><h1 class="m-0 p-4">SUT</h1></div>-->
+	<h1 style="font-family: 'EA Font v1.5 by Ghettoshark';letter-spacing: 0.3vw; font-size: 5vw; position: absolute; top:0.1vw; left:1vw;">SUT</h1>
+	<h1 style="font-family: 'EA Font v1.5 by Ghettoshark'; font-size: 2vw; letter-spacing: 0.2vw;position: absolute; top:4.8vw; left:1vw;">sharif</h1>
+	<h1 style="font-family: 'EA Font v1.5 by Ghettoshark'; font-size: 2vw; letter-spacing: 0.1vw;position: absolute; top:6.6vw; left:1vw;">Ultimate</h1>
+	<h1 style="font-family: 'EA Font v1.5 by Ghettoshark'; font-size: 2vw; letter-spacing: 0.2vw;position: absolute; top:8.4vw; left:1vw;">team</h1>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#f3f4f5" fill-opacity="1" d="M0,192L120,160C240,128,480,64,720,48C960,32,1200,64,1320,80L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+</svg>
+	<div class="container">
+		
+		<div class="bg" style="background-image:url('bg.jpg'); background-size:100% 100%; transform: translate(0,-10%);">
+			<div class="row" style="transform: translate(0,-20%);">
+				
+				<div class="col">
+				</div>
+				<div class="col">
+				</div>
+				<div class="col mx-md-3 p-0">
+					<p class="oa  text-white">83</p>
+					<p class="name text-center text-white">Ronaldo</p>
+					<p class="prop pac text-white">78 PAC</p>
+					<p class="prop sho text-white">72 SHO</p>
+					<p class="prop pas text-white">68 PAS</p>
+					<p class="prop dri text-white text-white text-white">78 DRI</p>
+					<p class="prop def text-white text-white">43 DEF</p>
+					<p class="prop phy text-white">69 PHY</p>
+					<img class="player" src="ronaldo.png">
+					<img src="champ.png" style="width:100%;">
+				</div>
+				<div class="col mx-md-3 p-0">
+					<p class="oa  text-white">83</p>
+					<p class="name text-center text-white">Messi</p>
+					<p class="prop pac text-white">78 PAC</p>
+					<p class="prop sho text-white">72 SHO</p>
+					<p class="prop pas text-white">68 PAS</p>
+					<p class="prop dri text-white text-white text-white">78 DRI</p>
+					<p class="prop def text-white text-white">43 DEF</p>
+					<p class="prop phy text-white">69 PHY</p>
+					<img class="player" src="messi.png">
+					<img src="flashback.png" style="width:100%;">
+				</div>
+				<div class="col mx-md-3 p-0">
+					<p class="oa">83</p>
+					<p class="name text-center">Alireza</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="jahan.png">
+					<img src="card.png" style="width:100%;">
+				</div>
+				<div class="col">
+				</div>
+				<div class="col">
+				</div>
+				
+			</div>
+			<div class="row" style="transform: translate(0,0);">
+				
+				<div class="col">
+				</div>
+				
+				<div class="col p-0">
+					<p class="oa">83</p>
+					<p class="name text-center">Ronaldo</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="ronaldo.png">
+					<img src="card.png" style="width:100%;">
+				</div>
+				<div class="col">
+				</div>
+				<div class="col p-0">
+					<p class="oa  text-white">83</p>
+					<p class="name text-center text-white">Messi</p>
+					<p class="prop pac text-white">78 PAC</p>
+					<p class="prop sho text-white">72 SHO</p>
+					<p class="prop pas text-white">68 PAS</p>
+					<p class="prop dri text-white text-white text-white">78 DRI</p>
+					<p class="prop def text-white text-white">43 DEF</p>
+					<p class="prop phy text-white">69 PHY</p>
+					<img class="player" src="messi.png">
+					<img src="flashback.png" style="width:100%;">
+				</div>
+				<div class="col">
+				</div>
+				<div class="col p-0">
+					<p class="oa text-white">83</p>
+					<p class="name text-center">Ronaldo</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="ronaldo.png">
+					<img src="uero.png" style="width:100%;">
+				</div>
+				
+				<div class="col">
+				</div>
+				
+			</div>
+			<div class="row" style="transform: translate(0,20%);">
+				<div class="col">
+				</div>
+				<div class="col mx-md-4 p-0">
+					<p class="oa  text-white">83</p>
+					<p class="name text-center text-white">Messi</p>
+					<p class="prop pac text-white">78 PAC</p>
+					<p class="prop sho text-white">72 SHO</p>
+					<p class="prop pas text-white">68 PAS</p>
+					<p class="prop dri text-white text-white text-white">78 DRI</p>
+					<p class="prop def text-white text-white">43 DEF</p>
+					<p class="prop phy text-white">69 PHY</p>
+					<img class="player" src="messi.png">
+					<img src="purp.png" style="width:100%;">
+				</div>
+				<div class="col mx-md-4 p-0">
+					<p class="oa">83</p>
+					<p class="name text-center">Ronaldo</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="ronaldo.png">
+					<img src="card.png" style="width:100%;">
+				</div>
+				<div class="col mx-md-4 p-0">
+					<p class="oa  text-white">83</p>
+					<p class="name text-center text-white">Messi</p>
+					<p class="prop pac text-white">78 PAC</p>
+					<p class="prop sho text-white">72 SHO</p>
+					<p class="prop pas text-white">68 PAS</p>
+					<p class="prop dri text-white text-white text-white">78 DRI</p>
+					<p class="prop def text-white text-white">43 DEF</p>
+					<p class="prop phy text-white">69 PHY</p>
+					<img class="player" src="messi.png">
+					<img src="champ.png" style="width:100%;">
+				</div>
+				<div class="col mx-md-4 p-0">
+					<p class="oa">83</p>
+					<p class="name text-center">Ronaldo</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="ronaldo.png">
+					<img src="card.png" style="width:100%;">
+				</div>
+				<div class="col">
+				</div>
+			</div>
+			<div class="row" style="transform: translate(0,30%);">
+				<div class="col">
+				</div>
+				<div class="col">
+				</div>
+				
+				<div class="col p-0" style="position: relative; margin-left:10%; margin-right:10%;">
+					<p class="oa">83</p>
+					<p class="name text-center">Abedzadeh</p>
+					<p class="prop pac">78 PAC</p>
+					<p class="prop sho">72 SHO</p>
+					<p class="prop pas">68 PAS</p>
+					<p class="prop dri">78 DRI</p>
+					<p class="prop def">43 DEF</p>
+					<p class="prop phy">69 PHY</p>
+					<img class="player" src="abed.png">
+					<img src="card.png" style="width:100%;">
+					
+				</div>
+				
+				<div class="col">
+				</div>
+				<div class="col">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#f3f4f5" fill-opacity="1" d="M0,320L120,288C240,256,480,192,720,181.3C960,171,1200,213,1320,234.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+</svg>
+</body>
+<script type="text/javascript">
+Swal.fire({
+  title: 'اسمت؟',
+  input: 'text',
+  inputLabel: 'نامت چیست؟',
+  inputPlaceholder: 'Cristiano',
+  inputAttributes: {
+    maxlength: 10,
+    autocapitalize: 'off',
+    autocorrect: 'off' },
+	background: '#fff url("https://sweetalert2.github.io/images/trees.png")',
+	  backdrop: `
+	    rgba(0,0,123,0.8)
+	    url("http://s16.picofile.com/file/8413035976/ronaldo.gif")
+	    left top
+	    no-repeat
+	  `
+ 
+}).then((result) => {
+	Swal.fire({
+	title: '***',
+	  html:'دو تا سوال صرفا برای خالی نبودن عریضه!!',
+	  width: 600,
+	  padding: '3em',
+	  background: '#fff url("https://sweetalert2.github.io/images/trees.png")',
+	  backdrop: `
+	    rgba(0,0,123,0.8)
+	    url("http://s16.picofile.com/file/8413035976/ronaldo.gif")
+	    left top
+	    no-repeat
+	  `
+	  })
+	.then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+ 
+    Swal.fire({
+	  title: 'سوال اول',
+	  html:'صرفا برای خالی نبودن عریضه',
+	  width: 600,
+	  padding: '3em',
+	  background: '#fff url("https://sweetalert2.github.io/images/trees.png")',
+	  backdrop: `
+	    rgba(0,0,123,0.8)
+	    url("http://s16.picofile.com/file/8413036918/source.gif")
+	    left top
+	    no-repeat
+	  `
+	})
+	.then((result) => {
+		 Swal.fire({
+	  title: 'سوال دوم',
+	  html:'صرفا برای خالی نبودن عریضه',
+	  width: 600,
+	  padding: '3em',
+	  background: '#fff url("https://sweetalert2.github.io/images/trees.png")',
+	  backdrop: `
+	    rgba(0,0,123,0.8)
+	    url("http://s16.picofile.com/file/8413034600/maradona.gif")
+	    left top
+	    no-repeat
+	  `
+	})
+  
+  .then((result) => {
+  Swal.fire({
+  title: 'آقا تبریک!',
+  html: '<div class="p-0" style="width:40%; position: relative; margin:auto;"><p class="oa">83</p><p class="name text-center">Alireza</p><p class="prop pac">78 PAC</p><p class="prop sho">72 SHO</p><p class="prop pas">68 PAS</p><p class="prop dri">78 DRI</p><p class="prop def">43 DEF</p><p class="prop phy">69 PHY</p><img class="player" src="jahan.png"><img src="card.png" style="width:100%;"></div>',
+  background: '#000 url("http://s16.picofile.com/file/8413038468/congrats.gif") center center no-repeat',
+	  backdrop: `
+	    rgba(0,0,123,0.8)
+	    
+	  `
+})
+})
+})
+})
+})	
+</script>
+</html>
